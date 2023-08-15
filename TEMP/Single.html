@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Design.css">
+    <title>Image Dehaze</title>
+</head>
+
+<body>
+    <div class="App">
+        <header class="App-header">
+            <a href="Home.html">
+                <h1 class="logo">
+                    Image Dehazing
+                </h1>
+            </a>
+            <br />
+            <h1>Image Dehaze: Effortless Removal of Haze From Your Images Using AI</h1>
+            <p class="pageDesc Text-centre">
+                A powerful AI-based image processing tool for removing haze from images quickly and easily. Our advanced
+                algorithms utilize deep learning to identify and remove the hazy pixels from your images, restoring them
+                to
+                crystal clear clarity. Get the best results from your photos with our AI-powered haze removal
+                technology.
+            </p>
+            <br />
+            <br />
+            <p class="pageDesc Text-centre">
+                <em>
+                    <strong>
+                        Only 1 image can be uploaded at a time. Please select the image you want to upload and click
+                        the
+                        submit button to start the process.
+                    </strong>
+                </em>
+            </p>
+        </header>
+        <div class="upload-container">
+            <form id="upload-form">
+                <label for="upload-input" class="upload-label">
+                    Choose an image to upload:
+                    <input id="upload-input" type="file" accept="image/*">
+                </label>
+            </form>
+        </div>
+        <div id="image-container" class="image-container"></div>
+        <br />
+        <br />
+        <div class="intensity-container">
+            <label for="intensity-input" class="intensity-label">
+                Intensity of Defogging (1-5):
+                <input id="intensity-input" type="range" min="1" max="5" step="1" value="3">
+            </label>
+        </div>
+        <button id="submit-button" class="submit-button" type="button">
+            Submit
+        </button>
+        <div id="defogging-container" class="defogging-container"></div>
+        <div id="processed-container" class="processed-container"></div>
+        <div class="pageDesc Text-centre">
+            <p>
+                <em>
+                    <strong>
+                        Note: The image will be processed once it is uploaded. Please wait for the processing
+                        to complete before uploading another image.<br /> <br />
+                    </strong>
+                </em>
+            </p>
+        </div>
+    </div>
+
+    <script src="Java.js"></script>
+</body>
+
+</html>
